@@ -1,32 +1,38 @@
 import React from "react";
-import img from '../assets/img.png'
+import Project1 from '../assets/Project1.jpg'
+import Project8 from '../assets/Project8.jpeg'
+import Project3 from '../assets/Project3.jpeg'
+import Project4 from '../assets/Project4.jpeg'
+import Project5 from '../assets/Project5.jpeg'
+import Project6 from '../assets/Project6.jpeg'
+// Project2, Project3, Project4, Project5, Project6, Project7
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: img
+            src: Project1
         },
         {
             id: 2,
-            src: img
+            src: Project8
         },
         {
             id: 3,
-            src: img
+            src: Project3
         },
         {
             id: 4,
-            src: img
+            src: Project4
         },
         {
             id: 5,
-            src: img
+            src: Project5
         },
         {
             id: 6,
-            src: img
+            src: Project6
         },
     ]
 
@@ -41,12 +47,13 @@ const Portfolio = () => {
                 </p>
             </div>
 
-            <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+            <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-16 sm:px-13">
 
             {
                 portfolios.map(({id, src}) => ( 
                 <div key={id} className="shadow-lg  shadow-cyan-700 rounded-2xl   ">
-                    <img src={src} alt="" className=" rounded-3xl duration-200 hover:scale-105 " />
+                    <img src={src} alt="" className=" rounded-3xl duration-200 hover:scale-105 object-fill h-80 w-80 "  />
+                    {/* className="object-cover w-full h-full rounded-3xl duration-200 hover:scale-105" style={{ aspectRatio: '1/1' }}  */}
                     <div className="flex items-center justify-center">
                         <button className="rounded-lg shadow-sm shadow-gray-800   w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105  " >Demo</button>
                         <button className="rounded-lg shadow-sm shadow-gray-800 w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>

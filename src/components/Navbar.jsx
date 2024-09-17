@@ -56,7 +56,7 @@ export default function Navbar() {
             <li 
             key={id} 
             className='px-4 cursor-pointer capitalize  py-6 text-4xl hover:scale-90 duration-100'>
-              <Link onClick={() => setnav(!nav)} to ={link} smooth offset={-70} duration={500}> {link} </Link>
+              <Link onClick={() => setnav(!nav)} to ={link} smooth offset={19} duration={500}> {link} </Link>
             </li>
           ))}       
         </ul>

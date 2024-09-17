@@ -15,7 +15,7 @@ const Home = () => {
                         I'm a student and learning React & This is my Portfolio.
                     </p>
                     <div>
-                        <Link to='portfolio' smooth offset={-60} duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  bg-gradient-to-r from-blue-500  to-purple-500'  >
+                        <Link to='portfolio' smooth offset={-60} duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-purple-500'  >
                             Portfolio
                             <span className = 'ml-1 group-hover:rotate-180     duration-300'>
                                 <BsArrowRight size={15}/>
@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={heroImage} alt = 'my profile' className = 'mb-10   rounded-full   mx-auto w-2/3 md:   hover:-translate-y-1 hover:scale-110  shadow-2xl   shadow-purple-800     ' ></img>
+                    <img src={heroImage} alt = 'my profile' className = 'mb-10   rounded-full mx-auto w-2/3 md: hover:-translate-y-1 hover:scale-110  shadow-2xl shadow-purple-800     ' ></img>
                 </div>
             </div>
         </div>
